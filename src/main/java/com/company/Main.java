@@ -4,13 +4,7 @@ import java.util.*;
 
 public class Main {
 
-
-
-    public static void main(String[] args) {
-
-
-        // First exercise
-
+    public static void firstExercise () {
         String[] colors = {"red", "orange", "yellow", "green", "blue", "violet", "magenta"};
         ArrayList<String> colorsList = new ArrayList<String>();
         for (String color : colors)
@@ -26,11 +20,17 @@ public class Main {
             colorsSublist.add(colorsList.get(i));
         for (String color : colorsSublist)
             System.out.print(String.format("%s ", color));
+    }
+
+    public static void main(String[] args) {
+
+        // First exercise
+
+        firstExercise();
 
         // Second exercise
 
-        System.out.println(String.format("There are %d unique words in text.", Text.textSplit().size()));
-
+        System.out.println(String.format("\nThere are %d unique words in text.", Text.textSplit().size()));
 
     }
 }
